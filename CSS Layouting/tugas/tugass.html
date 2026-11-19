@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Profil</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            min-height: 100vh;
+            background-color: white;
+        }
+
+        header {
+            width: 100%;
+            height: 60px;
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            border: 2px solid blanchedalmond;
+            width: 100px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: blanchedalmond;
+        }
+
+        .banner {
+            width: 100%;
+            height: 70px;
+            overflow: hidden;
+        }
+
+        .banner image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .main {
+            width: 100%;
+            min-height: calc(100vh - 310px);
+            display: flex;
+        }
+
+        .sidebar {
+            width: 32%;
+            background-color: blanchedalmond;
+            padding: 30px;
+            color: black;
+            border: 1px solid rgb(129, 119, 104);
+        }
+
+        .sidebar h3 {
+            font-size: 20px;
+            margin-bottom: 35px;
+        }
+
+        .sidebar p {
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .content {
+            width: 68%;
+            background-color: rgb(184, 168, 145);
+            padding: 40px;
+        }
+
+        .pendidikan {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 35px;
+        }
+
+        .box {
+            width: 150px;
+            height: 130px;
+            background-color: blanchedalmond;
+            border: 4px solid rgb(132, 121, 105);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(56, 51, 44);
+            font-size: 22px;
+        }
+
+        .deskripsi {
+            font-size: 15px;
+            line-height: 1.6;
+            text-align: justify;
+            padding: 0 15px;
+        }
+
+        .deskripsi strong {
+            color: #b17c30;
+        }
+
+        footer {
+            width: 100%;
+            height: 60px;
+            background-color: black;
+            border: 3px solid rgb(139, 128, 112);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">PROFILE</a>
+            <a href="#">CONTACT</a>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <img class="image" src="78522-01.jpeg" />
+    </section>
+
+    <!-- KONTEN UTAMA -->
+    <div class="main">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <h3>TENTANG AKU</h3>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat.
+            </p>
+        </aside>
+
+        <!-- KONTEN KANAN -->
+        <main class="content">
+
+            <div class="pendidikan">
+                <div class="box">SD</div>
+                <div class="box">SMP</div>
+                <div class="box">SMA</div>
+                <div class="box">S1</div>
+            </div>
+
+            <div class="deskripsi">
+                <p>
+                    <strong>Kisah Sekolahku :</strong>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.
+                </p>
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        Copyright 2026. My Web Personal. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
